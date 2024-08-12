@@ -1,10 +1,12 @@
-import time
 from selenium import webdriver
 from selene import browser
-def download_files():
+import time
+
+
+def test_file_download_witch_browser():
     options = webdriver.ChromeOptions()
     prefs = {
-        "download.default_directory": '/Users/filippnis/PycharmProjects/tttt',
+        "download.default_directory": '/Users/filippnis/PycharmProjects/download_file',
         "download.prompt_for_download": False
     }
     options.add_experimental_option("prefs", prefs)
